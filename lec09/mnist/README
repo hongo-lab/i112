@@ -1,0 +1,31 @@
+MobaXtermなどからKAGAYAKIにログイン
+    ssh hongo@kagayaki.jaist.ac.jp
+
+インタラクティブモードで計算ノードに入る
+    qsub -I -q SINGLE
+
+singularityモジュールのロード
+    module load singularity
+
+作業ディレクトリに移動
+    cd ~/orientation/4_environment/mnist
+Singularityイメージのビルド
+    singularity pull --docker-login ml-environment docker://moby21.jaist.ac.jp/hongo/ml-environment:latest
+    Username/PasswordともにJAIST-SSOと同じ
+    
+Singularityコンテナの実行
+    singularity exec --bind /home/hongo/orientation/4_environment/mnist:/home/jupyter/notebooks ml-environment.sif jupyter notebook --no-browser --port=8888 --ip=0.0.0.0 --allow-root
+
+Jupyter Notebookのトークンを取得
+    http://127.0.0.1:8888/tree?token=b....
+    --> 「token=」以降の文字列
+
+ポートフォワーディングの設定
+    nslookup spcc-XXX (インタラクティブモードで入った計算ノード)
+        Non-authoritative answer:
+        Name:	spcc-XXX.jaist.ac.jp
+        Address: XXX.XX.XXX.XXX
+    ssh -L 8888:localhost:8888 hongo@XXX.XX.XXX.XXX
+
+ローカルブラウザでJupyter Notebookにアクセス
+    http://localhost:8888

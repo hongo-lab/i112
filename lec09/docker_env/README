@@ -1,0 +1,3 @@
+Docker環境のビルド
+    docker build -t ml-environment .
+    docker run -p 8888:8888 -v /home/ubuntu/orientation/4_environment/docker_env:/workspace -it ml-environment
