@@ -1,0 +1,12 @@
+# working directory
+# <path to>/class/i112/lec14/0_compile
+
+# execute the python script
+  % python hello.py
+
+# compile the C program and execute it.
+  % gcc hello.c
+  % ./a.out
+
+  % gcc hello.c -o hello
+  % ./hello

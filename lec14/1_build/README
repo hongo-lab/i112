@@ -1,0 +1,19 @@
+# working directory
+# <path to>/class/i112/lect14/1_build
+
+# enetring an interactive job
+  % qsub -I -q DEFAULT
+
+# go to the working directory
+
+# load an intel compiler
+  % module load oneapi
+
+% execute the make
+  % make
+
+% execute the executable hello_mpi
+  % mpiexec -np 4 ./hello_mpi
+
+% remove object files and the executable by:
+  % make clean
