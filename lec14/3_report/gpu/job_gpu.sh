@@ -15,11 +15,6 @@ module purge
 module load 12.8u1
 module load singularity
 
-#module list
-
-#echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES}"
-#nvidia-smi
-
 cd ${PBS_O_WORKDIR}
 
 PYTHONNOUSERSITE=1 singularity exec --nv ./pytorch_h100.sif python3 fashion_mnist.py
