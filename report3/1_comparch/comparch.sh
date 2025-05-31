@@ -5,7 +5,7 @@
 #                                       2025/05/30 K. Hongo
 #################################################################
 
-#PBS -N gpu_fashion_mnist
+#PBS -N comparch
 #PBS -j oe
 #PBS -q i112@kvm-pbs
 #PBS -l select=1:ngpus=1
