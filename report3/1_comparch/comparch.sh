@@ -1,21 +1,21 @@
 #!/bin/bash
 
 #################################################################
-# CPU Job Script only for i112
+# H100 1/4GPU Job Script only for i112
 #                                       2025/05/30 K. Hongo
 #################################################################
 
-#PBS -N cpu_fashion_mnist
+#PBS -N gpu_fashion_mnist
 #PBS -j oe
-#PBS -q DEFAULT
-#PBS -l select=1
+#PBS -q i112@kvm-pbs
+#PBS -l select=1:ngpus=1
 
 source /etc/profile.d/modules.sh
 module purge
+module load 12.8u1
 module load singularity
 
 cd ${PBS_O_WORKDIR}
 
-PYTHONNOUSERSITE=1 singularity exec ./pytorch_cpu.sif python3 fashion_mnist.py
-
+PYTHONNOUSERSITE=1 singularity exec --nv ./pytorch.sif python3 fashion_mnist.py
 
