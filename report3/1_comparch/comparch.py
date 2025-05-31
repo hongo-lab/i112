@@ -8,9 +8,12 @@ import time
 import matplotlib.pyplot as plt
 
 # ハイパーパラメータ設定
-batch_size = 64
-epochs = 10
-learning_rate = 0.001
+batch_size = 16
+epochs = 1
+learning_rate = 0.01
+print(f"batch size: {batch_size}")
+print(f"epoch size: {epochs}")
+print(f"learning rate: {learning_rate}")
 
 # 学習とテストの処理を定義
 def train_and_evaluate(device, train_loader, test_loader):
