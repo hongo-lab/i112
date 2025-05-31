@@ -47,8 +47,9 @@ i112/
     │   └── fashion_mnist.ipynb
     ├── 1_comparch
     │   ├── comparch.py
-    │   └── comparch.sh
-    └── 2_hypopt
-        ├── fashion_mnist.py
-        └── job.sh
+    │   └── job.sh
+    ├── 2_hypopt
+    │   ├── fashion_mnist.py
+    │   └── job.sh
+    └── YOURID_submission
 ```
