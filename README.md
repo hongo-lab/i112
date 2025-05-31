@@ -28,27 +28,27 @@ i112/
 │       ├── README.md
 │       ├── mnist.py
 │       └── pbs_cpu.sh
-└── lec14
-    ├── 0_compile
-    │   ├── README
-    │   ├── hello.c
-    │   └── hello.py
-    ├── 1_build
-    │   ├── Makefile
-    │   ├── README
-    │   ├── function.c
-    │   └── main.c
-    ├── 2_comparison
-    │   ├── README
-    │   ├── optimization2D.c
-    │   └── optimization2D.py
-    └── 3_report
-        ├── cpu
-        │   ├── fashion_mnist.py
-        │   └── job_cpu.sh
-        ├── gpu
-        │   ├── fashion_mnist.py
-        │   └── job_gpu.sh
-        └── interactive
-            └── fashion_mnist.ipynb
+├── lec14
+│   ├── 0_compile
+│   │   ├── README
+│   │   ├── hello.c
+│   │   └── hello.py
+│   ├── 1_build
+│   │   ├── Makefile
+│   │   ├── README
+│   │   ├── function.c
+│   │   └── main.c
+│   └── 2_comparison
+│       ├── README
+│       ├── optimization2D.c
+│       └── optimization2D.py
+└── report3
+    ├── 0_interactive
+    │   └── fashion_mnist.ipynb
+    ├── 1_comparch
+    │   ├── comparch.py
+    │   └── comparch.sh
+    └── 2_hypopt
+        ├── fashion_mnist.py
+        └── job.sh
 ```
