@@ -1,4 +1,6 @@
-.
+## ディレクトリ構成
+```
+i112/
 ├── README.md
 ├── lec09
 │   ├── README
@@ -49,5 +51,4 @@
         │   └── job_gpu.sh
         └── interactive
             └── fashion_mnist.ipynb
-
-18 directories, 33 files
+```
