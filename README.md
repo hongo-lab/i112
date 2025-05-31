@@ -52,4 +52,5 @@ i112/
     │   ├── fashion_mnist.py
     │   └── job.sh
     └── YOURID_submission
+        └── use_this_directory
 ```
