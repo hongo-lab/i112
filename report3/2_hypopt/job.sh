@@ -17,5 +17,5 @@ module load singularity
 
 cd ${PBS_O_WORKDIR}
 
-PYTHONNOUSERSITE=1 singularity exec --nv ./pytorch.sif python3 fashion_mnist.py
+PYTHONNOUSERSITE=1 singularity exec --nv /home/lecture/is/i112/2025/report3/pytorch.sif python3 fashion_mnist.py
 
