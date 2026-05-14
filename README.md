@@ -2,6 +2,13 @@
 ```
 i112/
 ├── README.md
+├── lec08
+│   ├── sh_ex0.sh
+│   ├── var_ex1.sh
+│   ├── arg_ex2.sh
+│   ├── bq_ex3.sh
+│   ├── es_ex4.sh
+│   └── if_ex5.sh
 ├── lec09
 │   ├── README
 │   ├── docker_env
