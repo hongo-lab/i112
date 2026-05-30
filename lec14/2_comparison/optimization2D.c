@@ -168,7 +168,7 @@ int main(void)
 
     if(count%100==0)
     {
-      printf("n = %d, x = %.17f, y = %.17f, z = %.17f \n", count+1, x, y, z);
+      //      printf("n = %d, x = %.17f, y = %.17f, z = %.17f \n", count+1, x, y, z);
       fprintf(fp, "%d %.17f %.17f %.17f \n", count+1, x, y, z);
     }
     if(fabs(z - z_before)<cutoff)
@@ -178,7 +178,7 @@ int main(void)
     count++;
   }
   //printf("\n\n");
-  //printf("n = %d, x = %.17f, y = %.17f, z = %.17f \n", count+1, x, y, z);
+  printf("n = %d, x = %.17f, y = %.17f, z = %.17f \n", count+1, x, y, z);
   fprintf(fp, "\n\n");
   fprintf(fp, "%d %.17f %.17f %.17f \n", count+1, x, y, z);
   fclose(fp);

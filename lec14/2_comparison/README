@@ -8,7 +8,7 @@
   % gcc optimization2D.c -o opt -lm -O3
 
 # execute the binary, opt and check the time
-  % time ./opt
+  % time ./opt 
 
 # execute the python job, optimization2D.py
   % time python optimization2D.py

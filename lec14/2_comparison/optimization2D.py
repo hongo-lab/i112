@@ -63,10 +63,11 @@ with open("data.dat", "w") as f:
         z = func(x, y, x0, y0, sx, sy)
 
         if count % 100 == 0:
-            print(f'n = {count+1}, x = {x:.17f}, y = {y:.17f}, z = {z:.17f}')
+#            print(f'n = {count+1}, x = {x:.17f}, y = {y:.17f}, z = {z:.17f}')
             f.write(f"{count+1} {x:.17f} {y:.17f} {z:.17f}\n")
         if abs(z - z_before) < cutoff:
             break
         count += 1
 
     f.write(f"\n\n{count+1} {x:.17f} {y:.17f} {z:.17f}\n")
+    print(f'n = {count+1}, x = {x:.17f}, y = {y:.17f}, z = {z:.17f}')
