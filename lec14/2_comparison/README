@@ -2,10 +2,7 @@
 # <path to>/class/i112/lect14/2_comparison
 
 # enetering an interactive job
-  % qsub -q  -I
-
-# move to the working directory
-  % cd <path to>/class/i112/lect14/2_comparison
+  % salloc -p DEF
 
 # compile
   % gcc optimization2D.c -o opt -lm -O3

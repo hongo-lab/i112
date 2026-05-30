@@ -2,7 +2,7 @@
 # <path to>/class/i112/lect14/1_build
 
 # enetring an interactive job
-  % qsub -I -q DEFAULT
+  % salloc -p DEF
 
 # go to the working directory
 

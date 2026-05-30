@@ -1,6 +1,9 @@
 # working directory
 # <path to>/class/i112/lec14/0_compile
 
+# enetring an interactive job
+  % salloc -p DEF
+
 # execute the python script
   % python hello.py
 
@@ -10,3 +13,4 @@
 
   % gcc hello.c -o hello
   % ./hello
+  
