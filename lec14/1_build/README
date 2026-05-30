@@ -12,8 +12,8 @@
 % execute the make
   % make
 
-% execute the executable hello_mpi
-  % mpiexec -np 4 ./hello_mpi
+% execute the executable mpi_hello
+  % mpiexec -np 4 ./mpi_hello
 
 % remove object files and the executable by:
   % make clean
