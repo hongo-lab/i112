@@ -1,0 +1,5 @@
+#Dockerコンテナの起動
+    docker run -p 8888:8888 -v $(pwd):/workspace -it ml-12
+
+#第12回のDockerコンテナを作成していない場合：
+    docker build -t ml-12 .

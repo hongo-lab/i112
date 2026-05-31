@@ -45,19 +45,16 @@ i112/
 │   │   ├── README
 │   │   ├── function.c
 │   │   └── main.c
-│   └── 2_comparison
+│   ├── 2_comparison
+│   │   ├── README
+│   │   ├── optimization2D.c
+│   │   └── optimization2D.py
+│   └── 3_mnist
 │       ├── README
-│       ├── optimization2D.c
-│       └── optimization2D.py
+│       └── fashion_mnist.ipynb
 └── report3
-    ├── 0_interactive
-    │   └── fashion_mnist.ipynb
-    ├── 1_comparch
-    │   ├── comparch.py
-    │   └── job.sh
-    ├── 2_hypopt
-    │   ├── fashion_mnist.py
-    │   └── job.sh
+    ├── fashion_mnist.py
+    ├── job.sh
     └── YOURID_submission
-        └── use_this_directory
+        
 ```
