@@ -5,7 +5,7 @@
 # 2026/05/31 K. Hongo
 #######################################
 
-#SBATCH -J gpu_vs_cpu
+#SBATCH -J hopt
 #SBATCH -p i112
 #SBATCH -A i112
 #SBATCH --gpus=1
